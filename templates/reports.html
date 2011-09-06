@@ -1,0 +1,57 @@
+	<section> 
+	<br /><br />
+	%warning%
+	<div style="visibility:%rf_error%">
+		<table class="rf-table">
+			<tr>
+				<th>Username</th>
+				<th>Tweets</th>
+				<th>Following</th>
+				<th>Followers</th>
+				<th>Favorites</th>
+				<th>Lists</th>
+				<th>Retweets</th>
+			</tr>
+			
+			<!--row-0-start-->
+			<tr><td>%twt_img%%rf_id%</td><td>%rf_twt%</td><td>%rf_fing%</td><td>%rf_fers%</td><td>%rf_fav%</td><td>%rf_list%</td><td>%rf_retwt%</td></tr>
+			<!--row-0-end-->
+			
+		</table>
+		<br />
+		<br />
+			
+		%reports_image1%
+		
+		<header>
+				<h1>Wish to look up a Twitter account?</h1>
+		</header>
+			<form id="rf_form" name="rf_form" action="?pagename=reports" method="post">
+			Username: <input type="text" id="rf_id" name="rf_id"/>
+			<input type="submit" />
+			</form>
+		<br />
+		
+		<div style="visibility:%vis%">
+			<table class="rf-table">
+				<tr>
+				<th>Username</th>
+				<th>Tweets</th>
+				<th>Following</th>
+				<th>Followers</th>
+				<th>Favorites</th>
+				<th>Lists</th>
+				<th>Retweets</th>
+			</tr>
+			
+			<!--row-1-start-->
+			<tr><td>%twt_img1%%rf_id1%</td><td>%rf_twt1%</td><td>%rf_fing1%</td><td>%rf_fers1%</td><td>%rf_fav1%</td><td>%rf_list1%</td><td>%rf_retwt1%</td></tr>
+			<!--row-1-end-->
+				
+			</table>
+			<br />
+			<br />
+			%reports_image2%
+		</div>
+	</div>
+	</section>

@@ -1,0 +1,31 @@
+
+<!-- DON'T FORGET TO PUT THIS INTO GLOBAL.JS and USE DEFENSIVE CODING -->
+<script>
+ function changeDescr()
+ {
+	 if( document.getElementById('category_description').value=="Enter Description")
+		{
+			 document.getElementById('category_description').value="";
+		}
+		 
+ }
+</script>
+
+<section>
+	<header>
+		%success%
+		%error%
+		<h1>Create New Category</h1>
+	</header>
+
+	<form method="post">
+	<label>Category Name: <input id="category_name" type="text" name="category_name" value="" size="10" /></label>
+	<p><textarea id="category_description" name="category_description" cols="40" rows="4" maxlength="200" onFocus="changeDescr()">Enter Description</textarea><br></p>
+	<br>
+	<input type="button" value="Cancel" onclick="window.location='?pagename=category_management'" /> <input type="submit" name="submit" value="Create group">
+	
+	</form>
+	
+</section>
+
+

@@ -1,0 +1,36 @@
+
+<section> 
+	<header><h1>All Pending Tweets (%numOfPending%)</h1></header>
+		<section> 
+			<img alt="img" src="http://a1.twimg.com/profile_images/1497500068/cake-logo_normal.png" /> 
+			<table class="rf-table">
+				<tr>
+					<th>Tweet ID</th>
+					<th>Content</th>
+					<th>Writer ID</th>
+					<th>Categories</th>
+					<th>Post Date</th>
+					<th></th>
+				</tr>
+				
+					<!--row-0-start-->
+					<tr>
+						<td>%tweetID%</td>
+						<td>%tweetContent%</td>
+						<td>%writerID%</td>
+						<td>%categories%</td>
+						<td>%postDate%</td>
+						<td>
+							<form style="float:left" action="?pagename=tweet_edit" method="GET">
+								<input type="hidden" value="tweet_edit" name="pagename" />
+								<input type="hidden" value="%tweetID%" name="tid" />
+								<input type="submit" value="Edit" />
+							</form>
+							
+						</tr>
+					<!--row-0-end-->
+				
+			</table>			
+			
+		</section>				
+</section> 

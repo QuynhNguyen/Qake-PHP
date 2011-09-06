@@ -1,0 +1,19 @@
+
+	<h1>List of all users</h1>
+	<p><a href="?pagename=users_add">Add a user</a></p>
+	<table class="rf-table">
+		<tr>
+			<th>User</th>
+			<th>Real Name</th>
+			<th>Created</th>
+			<th>Roles</th>
+			<th>Options</th>
+		</tr>
+		
+		<!--row-0-start-->
+		<tr><td>%username%</td><td>%real_name%</td><td><span title="%date_created%">%date_created_string%</span></td><td>%roles%</td><td><a href='?pagename=users_roles&username=%username%'>Roles</a> <a href='?pagename=user_edit&edit_username=%username%'>Edit</a> <a href='?pagename=user_delete&delete_username=%username%'>Delete</a></td></tr>
+		<!--row-0-end-->
+		
+	</table>
+	<br>
+	<br>

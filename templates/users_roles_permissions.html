@@ -1,0 +1,27 @@
+<h1>Manage role: %role_name%</h1>
+	<p>Role <a href="?pagename=users_roles_list">%role_name%</a> has the following permissions:</p>
+	<table class="rf-table">
+		<tr>
+			<th>Permission Name</th>
+			<th>Permission Description</th>
+			<th>Valid until</th>
+			<th>Options</th>
+		</tr>
+		
+		<!--row-0-start-->
+		<tr><td>%permission_name%</td><td>%permission_description%</td><td>%valid_until%</td><td><a href='?pagename=users_roles_delete_permission&permission_name=%permission_name%&role_name=%role_name%'>Delete</a></td></tr>
+		<!--row-0-end-->
+		
+	</table>
+	
+	<br>
+	<p>Add permission(s) to this role:</p>
+	<form action="?pagename=users_roles_add_permissions" method="post">
+	<input type="hidden" name="role_name" value="%role_name%">
+	<!--row-1-start-->
+	<input type="checkbox" name="%add_permission_name%"> %add_permission_name%<br>
+	<!--row-1-end-->
+	<br><input type="submit" name="Add">
+	</form>
+	<br>
+	<br>

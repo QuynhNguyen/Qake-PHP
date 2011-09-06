@@ -1,0 +1,16 @@
+
+
+<section>
+	%success%
+	%error%
+	<header><h1>%header%</h1></header>
+	<form method="POST">
+		<input type="hidden" name="edit" value="%id%" />
+		<p><label>Category Name: <input type="text" value="%category_name%" id="category_name" name="category_name"/></label></p>
+		<p><label>Description: <br/> <textarea id="category_description" name="category_description" cols="40" rows="4" maxlength="200">%category_description%</textarea></label></p>
+		<p><input type="button" value="Cancel" onclick="window.location='?pagename=category_management'" /> <input type="submit" value="Update Category" /></p>
+	</form>
+</section>
+
+
+

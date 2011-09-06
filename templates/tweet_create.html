@@ -1,0 +1,26 @@
+ <form id="form1" action="#" method="post">
+
+%error% <br />
+<b>%ActionType%</b>
+<br>
+<textarea name="tweetContent" cols="40" rows="4" maxlength="140" >%tweetContent%</textarea><br>
+<!--row-0-start-->
+<input type="checkbox" name="group_%group_num%" %checked% value="1" />%group_name%<br />
+<!--row-0-end-->
+<select id="schedule" name="schedule">
+<option value="1" %selected1%>Post now</option>
+<option value="2" %selected2%>Post later</option>
+</select>
+<!--<input id="date button" type="button" name="date button" value="Pick date" onclick="displayDatePicker('date button');" style="visibility: hidden"> -->
+<input id="date" type="date" name="date" value="%date%">%date% </input>
+<input id="time" type="time" name="time" value="%time%"> </input>
+<br><br>
+<input type="submit" name="submit" value="Submit">
+
+</form>
+
+<!--LEGEND
+%group_nameVal% group number(according to name) should be inserted here so we know what's checked off
+%group_name% what is displayed to client
+don't forget to grab date / time from form and store into DB (in addition to groups checked off)
+-->

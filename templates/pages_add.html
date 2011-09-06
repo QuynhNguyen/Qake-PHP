@@ -1,0 +1,18 @@
+
+<h1>Register a page ($pagename)</h1>
+<p>To cancel and return click <a href="?pagename=pages_list">here</a></p>
+<font style="color: Red; ">%errmsg%</font><form action="" method="POST">
+
+<br />Pagename ($pagename): <input type="text" value="%add_pagename%" name="add_pagename"> (no .php)<br>
+<br />Description: <br />
+<textarea name="description" cols="40" rows="4" maxlength="140" >%description%</textarea><br><br>
+
+Requires following permission to access: <select name="requires_permission">
+<option value="">none</option>
+<!--row-0-start-->
+<option value="%requires_permissionx%">%requires_permissionx%</option>
+<!--row-0-end-->
+</select>
+ <br /> <br />
+<input type="submit" name="submit" value="Register Page"/>
+</form>

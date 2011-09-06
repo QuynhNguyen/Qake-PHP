@@ -1,0 +1,29 @@
+<h1>Manage roles for user: %username%</h1>
+	<p>The following roles have been assigned to <a href="?pagename=users_list">%username%</a>:</p>
+	<table class="rf-table">
+		<tr>
+			<th>Role Name</th>
+			<th>Role Description</th>
+			<th>Assignment expires in</th>
+			<th>Role was assigned</th>
+			<th>Options</th>
+		</tr>
+		
+		<!--row-0-start-->
+		<tr><td><a href='?pagename=users_roles_permissions&role_name=%role_name%'>%role_name%</a></td><td>%role_description%</td><td><span title="%date_assigned_until%">%date_assigned_until_string%</span></td><td><span title="%date_assigned%">%date_assigned_string% ago</span></td>
+		<td><a href='?pagename=users_roles_revoke&role_name=%role_name%&username=%username%'>Revoke</a></td></tr>
+		<!--row-0-end-->
+		
+	</table>
+	
+	<br>
+	<p>Assign role(s) to this user:</p>
+	<form action="?pagename=users_roles_assign" method="post">
+	<input type="hidden" name="username" value="%username%">
+	<!--row-1-start-->
+	<input type="checkbox" name="%add_role_name%"> %add_role_name%<br>
+	<!--row-1-end-->
+	<br><input type="submit" name="Add">
+	</form>
+	<br>
+	<br>

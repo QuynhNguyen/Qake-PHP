@@ -1,0 +1,17 @@
+
+<h1>Add a new user</h1>
+<p>To cancel and return click <a href="?pagename=users_list">here</a></p>
+<font style="color: Red; ">%errmsg%</font><form action="" method="POST">
+Enter new user details:
+<br />Username: <input type="text" value="%username%" name="username">
+<br />Real Name: <input type="text" value="%real_name%" name="real_name">
+<br />Password: <input type="password" value="%password%" name="password">
+<br />Confirm Password: <input type="password" value="%password_confirm%" name="password_confirm"><br /><br />
+
+Assign role(s): <br />
+<!--row-0-start-->
+<input type="checkbox" %checked% name="role_%role_name%">%role_name%<br />
+<!--row-0-end-->
+ <br /> <br />
+<input type="submit" name="submit" value="Create User"/>
+</form>

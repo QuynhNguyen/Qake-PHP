@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>%site_title%</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+        <meta name="author" content="Qake" />
+        <link rel="icon" href="/favicon.ico" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="./css-js/style.css" type="text/css" media="all" />
+         <script type="text/javascript" src="./css-js/jquery-1.6.2.min.js"></script>
+        <script type="text/javascript" src="./css-js/jquery-ui-1.8.15.custom.min.js"></script>
+        <script type="text/javascript" src="./css-js/global.js"></script>	
+    </head>
+
+    <body>
+    	
+    	<div id="overflow-nav">
+    		<div class="container">
+    			<section id="search-box">
+    				<form action="?pagename=search_result" method="POST">
+    					<input type="text" id="search_query" name="search_query" /> <input type="submit" value="Search" /> <input type="button" value="Advance Search" onclick="window.location='?pagename=search_advance'" />
+					&copy; Qake.info - <a class="top_bar" href="?pagename=team">Team</a> | <a class="top_bar" href="?pagename=phppage">PHP validation</a> | %index_menu1%
+    				</form>
+ 
+    			</section>
+    		</div>
+    	</div>
+    	<div class="container">
+    		<header id="header">
+    			<a href="http://www.qake.info/"><img src="/images/cake-logo.png" alt="Qake Logo" title="Qake.info" /> </a><span>Welcome to Qake!</span>
+    		</header>
+    		<div id="main">
+    			
+    			%content%
+    			
+		<br style="clear: both;" />
+	</div>
+    		<footer id="footer">
+    			&copy; Qake.info - <a href="?pagename=team">Team</a> | <a href="?pagename=phppage">PHP validation</a>
+    		</footer>
+   </div>
+
+
+    </body>
+
+</html>

@@ -1,0 +1,21 @@
+
+	<h1>List of all registered pages ($pagename)</h1>
+	<p><a href="?pagename=pages_add">Register a page ($pagename)</a></p>
+	<table class="rf-table">
+		<tr>
+			<th>Pagename</th>
+			<th style="width:400px;text-align:left">Description</th>
+			<th>Required permission</th>
+			<th>Options</th>
+		</tr>
+		
+		<!--row-0-start-->
+		<tr><td>%pagename%</td><td style="width:400px;text-align:left">%description%</td><td><span title="%permission_description%">%requires_permission%</span></td><td><a href='?pagename=pages_delete&delete_pagename=%pagename%'>Delete</a></td></tr>
+		<!--row-0-end-->
+		
+	</table>
+	
+	<br>
+	<br>
+	
+Note: Editing is not supported. To edit a pages permission, delete it and add a new one.
